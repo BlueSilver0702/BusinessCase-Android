@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="1"
+    android:background="#ffffff">
+
+  <!--   <com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar_modelo"
+        style="@style/ActionBar" >
+    </com.markupartist.android.widget.ActionBar>-->
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="#838c90"
+          android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_modelo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/backbtn5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn" />
+
+            <Button
+                android:id="@+id/homebtn5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_btn" />
+            
+       </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight=".1"
+          android:background="#1b3767"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:paddingTop="5dp" >
+
+          <Button
+              android:id="@+id/googledir"
+              style="?android:attr/buttonStyleSmall"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="5dp"
+              android:layout_toLeftOf="@+id/imgview_help"
+              android:background="@drawable/take_btn"
+              android:visibility="gone" />
+
+          <ImageView
+              android:id="@+id/imgview_help"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/help_btn" />
+
+      </RelativeLayout>
+
+      <ListView
+          android:id="@+id/model_financios"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.9" >
+
+      </ListView>
+   
+</LinearLayout>

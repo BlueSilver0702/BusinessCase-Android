@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout 
+     android:background="#ffffff" 
+     android:orientation="vertical" 
+     android:layout_height="match_parent" 
+     android:layout_width="match_parent" 
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- <com.markupartist.android.widget.ActionBar android:id="@+id/actionbar_alcances_chekele" style="@style/ActionBar" android:layout_width="wrap_content" android:layout_height="wrap_content" />-->
+
+
+
+-<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#828a8f"
+        android:padding="10dp" >
+
+<TextView
+    android:id="@+id/tvtitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="@string/alcances_title"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#FFF" />
+
+<Button
+    android:id="@+id/backbtn61"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="65dp"
+    android:layout_height="40dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/back_btn" />
+
+<Button
+    android:id="@+id/homebtn61"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="65dp"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/home_btn" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.1"
+    android:background="#1d3767"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+<Button
+    android:id="@+id/btn_guard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/custom_button"
+    android:text="@string/btn_save"
+    android:textColor="#fff" />
+
+<ImageView
+    android:id="@+id/imghelp_btn999"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/help_btn" />
+
+</RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.9" >
+
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp" 
+	    android:layout_marginBottom="10dp"
+	    android:padding="10dp">
+	    
+	    <TextView
+		    android:id="@+id/tv_tiempo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/tiempo"
+		    android:textColor="#000000"
+		    android:visibility="gone"
+		    android:layout_margin="5dp"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_teimpo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone">
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <TextView
+		    android:id="@+id/tv_capacidad"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/capacidad"
+		    android:textColor="#000000"
+		    android:visibility="gone"
+		    android:layout_margin="5dp"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <EditText
+	        android:id="@+id/et_capacidad"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_horaris"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/horarios"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_horis_de_operation"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_cobertura"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/cobertura"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_cobertura_geografica"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone" />
+	    <TextView
+		    android:id="@+id/tv_products"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/productos"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_proucty_serviso"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_mondea"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/moneda"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_moneda"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone" />
+	
+	    <TextView
+		    android:id="@+id/tv_distribucion"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/distribucion"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <EditText
+	        android:id="@+id/et_distribucion"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_editification"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/edificaciones"
+		    android:textColor="#000000"
+		    android:visibility="gone"
+		    android:layout_margin="5dp"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_edification"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_almace"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/almacenamiento"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_almaceniominto"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_capital"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/capital"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_capital_requiredo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_otro1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/otro1"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_ortos1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	       	android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext" 
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_otro2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/otro2"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/et_ortos2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" 
+	        android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext"
+	        android:visibility="gone"/>
+	    <TextView
+		    android:id="@+id/tv_otro3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/otro3"
+		    android:textColor="#000000"
+		    android:layout_margin="5dp"
+		    android:visibility="gone"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+		    android:id="@+id/et_ortos3"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:inputType="textMultiLine"
+	        android:lines="3"
+	        android:background="@drawable/bg_edittext" 
+	        android:visibility="gone"
+	        />
+	
+	</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

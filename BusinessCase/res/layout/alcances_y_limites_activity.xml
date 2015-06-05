@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+   <!--     <com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar_alcan"
+        style="@style/ActionBar"
+        />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#828a8f"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/backbtn6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn" />
+
+            <Button
+                android:id="@+id/homebtn6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_btn" />
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+            
+       </RelativeLayout>
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="#1d3767"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+     
+      <ImageView
+          android:id="@+id/imgbtn_help"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="5dp"
+          android:layout_toLeftOf="@+id/iview_help"
+          android:src="@drawable/take_btn" />
+      
+       <Button
+           android:id="@+id/btn_next"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:background="@drawable/custom_button"
+           android:text="Button"
+           android:textColor="#fff" />
+
+       <ImageView
+           android:id="@+id/iview_help"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/help_btn" />
+  
+     </RelativeLayout>
+  
+      <ListView
+          android:id="@+id/lv_alc_ylimit"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0.9"
+          android:cacheColorHint="#00000000" >
+
+      </ListView>
+
+    
+   
+</LinearLayout>

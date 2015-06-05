@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffff">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#828a8f"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/backbtn21"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn" />
+
+        <Button
+            android:id="@+id/homebtn21"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_btn" />
+
+        <TextView
+            android:id="@+id/lv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:text="@string/lv_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1b3767"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/button_guarder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/btn_save"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/button_guarder"
+            android:background="@drawable/rowplus_btn"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#002244"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_add"
+            android:background="@drawable/rewdelet_btn"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#69BE28"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgbtn_help"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/help_btn" />
+
+        <ImageView
+            android:id="@+id/imgbtn_filldetail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imgbtn_help"
+            android:src="@drawable/take_btn"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imgbtn_filldetail"
+            android:src="@drawable/help_btn" />
+
+    </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" >
+    
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+     <!--    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_help" 
+            android:layout_gravity="right"/> -->
+
+     <TextView
+         android:id="@+id/tv_descCorta1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:text="@string/desc_short"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:textSize="18dp"
+         android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descCort1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2"
+        android:paddingLeft="3dp">
+
+        <requestFocus />
+    </EditText>
+
+     <TextView
+         android:id="@+id/tv_descLarga1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:text="@string/desc_long"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:textSize="18dp"
+         android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descLarga1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="3"/>
+
+    <TextView
+        android:id="@+id/tv_descCorta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/desc_short"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descCort2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2" />
+
+     <TextView
+         android:id="@+id/tv_descLarga2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:text="@string/desc_long"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:textSize="18dp"
+         android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descLarga2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="3" />
+
+    <TextView
+        android:id="@+id/tv_descCorta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/desc_short"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descCort3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:paddingLeft="3dp"
+        android:background="@drawable/bg_edittext"
+         android:visibility="gone"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2"/>
+
+     <TextView
+         android:id="@+id/tv_descLarga3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:text="@string/desc_long"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:textSize="16dp"
+         android:visibility="gone" />
+     
+    <EditText
+        android:id="@+id/descLarga3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="3" />
+
+    <TextView
+        android:id="@+id/tv_descCorta4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/desc_short"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descCort4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2" />
+    
+     <TextView
+         android:id="@+id/tv_descLarga4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="5dp"
+         android:layout_marginTop="5dp"
+         android:text="@string/desc_long"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:textSize="18dp"
+         android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/descLarga4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="3"/>
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>
+
+</ScrollView>

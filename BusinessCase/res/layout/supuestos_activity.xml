@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <!--    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar_susp"
+        style="@style/ActionBar"
+        />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#828a8f"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_suspectos_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/backbtn9"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn" />
+
+            <Button
+                android:id="@+id/homebtn9"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_btn" />
+            
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="#1d3767"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_guarder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/btn_save"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/btn_guarder"
+                android:background="@drawable/rowplus_btn"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#002244"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/subButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/addButton"
+                android:background="@drawable/rewdelet_btn"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#69BE28"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgbtn_help"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/help_btn" />
+
+            <ImageView
+                android:id="@+id/imgview_sus_help"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgbtn_help"
+                android:src="@drawable/take_btn" />
+
+            <ImageView
+                android:id="@+id/supuestos_guard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgview_sus_help"
+                android:src="@drawable/help_btn" />
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_sup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:textColor="#818A8F"
+        android:visibility="gone" />
+    <TextView
+          android:id="@+id/tv_desc_short1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+
+    <EditText
+        android:id="@+id/et_sup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="2"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone">
+
+        <requestFocus />
+    </EditText>
+    <TextView
+          android:id="@+id/tv_desc_larga1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+
+    <EditText
+        android:id="@+id/et_sup_larga1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="3"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"/>
+
+          
+
+    <TextView
+        android:id="@+id/tv_sup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:textColor="#818A8F"
+        android:visibility="gone"/>
+    <TextView
+          android:id="@+id/tv_desc_short2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+    <EditText
+        android:id="@+id/et_sup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="2"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"/>
+     <TextView
+          android:id="@+id/tv_desc_larga2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+
+    <EditText
+        android:id="@+id/et_sup_larga2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="3"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_sup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:textColor="#818A8F"
+        android:visibility="gone"/>
+    <TextView
+          android:id="@+id/tv_desc_short3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_sup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="2"
+        android:visibility="gone"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"/>
+     <TextView
+          android:id="@+id/tv_desc_larga3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+
+    <EditText
+        android:id="@+id/et_sup_larga3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="3"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/tv_sup4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:textColor="#818A8F"
+        android:visibility="gone"/>
+    <TextView
+          android:id="@+id/tv_desc_short4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+
+    <EditText
+        android:id="@+id/et_sup4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="2"
+        android:paddingLeft="4dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_edittext"/>
+
+         <TextView
+          android:id="@+id/tv_desc_larga4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+
+    <EditText
+        android:id="@+id/et_sup_larga4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="3"
+        android:paddingLeft="4dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

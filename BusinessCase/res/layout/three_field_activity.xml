@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!--
+            <com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar_threeField"
+        style="@style/ActionBar"
+        />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#828a8f"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/backbtn7"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn" />
+
+        <Button
+            android:id="@+id/homebtn7"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_btn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#1d3767"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_treefieldGuard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/btn_save"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_addtv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/btn_treefieldGuard"
+            android:background="@drawable/rowplus_btn"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#002244"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_deletetv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_addtv"
+            android:background="@drawable/rewdelet_btn"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#69BE28"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ihelp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/help_btn" />
+
+        <ImageView
+            android:id="@+id/imgview_help"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ihelp"
+            android:src="@drawable/take_btn" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imgview_help"
+            android:src="@drawable/help_btn" />
+
+    </RelativeLayout>
+
+  	<ScrollView
+  	    android:layout_width="match_parent"
+  	    android:layout_height="0dp"
+  	    android:layout_weight="0.8" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+          android:id="@+id/tv_desc1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"          
+          android:textColor="#818A8F"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />      
+      
+      <TextView
+          android:id="@+id/tv_desc_short1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:layout_margin="5dp"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />        
+     
+    <EditText
+        android:id="@+id/et_condep_feild1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="2"
+       	android:gravity="top"
+       	android:paddingLeft="3dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+       >
+
+       <requestFocus />
+    </EditText>
+    <TextView
+          android:id="@+id/tv_desc_long1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:layout_margin="5dp"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+     <EditText
+        android:id="@+id/et_condep_feild_desc_larga1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="3"
+       	android:gravity="top"
+       	android:paddingLeft="3dp"
+        android:background="@drawable/bg_edittext"
+        android:visibility="gone"
+       >
+
+      
+    </EditText>
+    <TextView
+          android:id="@+id/tv_desc2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#818A8F"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+      <TextView
+          android:id="@+id/tv_desc_short2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:layout_margin="5dp"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+
+    <EditText
+        android:id="@+id/et_condep_feild2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textMultiLine"
+       	android:gravity="top"
+        android:lines="2"
+        android:paddingLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_edittext"
+        android:ems="10" />
+      <TextView
+          android:id="@+id/tv_desc_larga2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:layout_margin="5dp"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      <EditText
+        android:id="@+id/et_condep_feild_desc_larga2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textMultiLine"
+       	android:gravity="top"
+       	android:paddingLeft="3dp"
+        android:lines="3"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_edittext"
+        android:ems="10" />
+    
+      <TextView
+          android:id="@+id/tv_desc3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#818A8F"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+       <TextView
+          android:id="@+id/tv_desc_corta3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:layout_margin="5dp"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+
+    <EditText
+        android:id="@+id/et_condep_feild3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:inputType="textCapSentences|textMultiLine"
+       	android:gravity="top"
+        android:visibility="gone"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="3dp"
+         android:background="@drawable/bg_edittext"
+        android:ems="10" />
+     <TextView
+          android:id="@+id/tv_desc_larga3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:layout_margin="5dp"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      <EditText
+        android:id="@+id/et_condep_feild_desc_larga3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textMultiLine"
+       	android:gravity="top"
+       	android:paddingLeft="3dp"
+        android:lines="3"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_edittext"
+        android:ems="10" />
+      <TextView
+          android:id="@+id/tv_desc4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#818A8F"
+          android:visibility="gone"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+    <TextView
+          android:id="@+id/tv_desc_corta4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_short"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:layout_margin="5dp"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      
+     <EditText
+        android:id="@+id/et_condep_feild4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="top"
+        android:lines="2"
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:paddingLeft="3dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10" />
+      <TextView
+          android:id="@+id/tv_desc_larga4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/desc_long"
+          android:textColor="#000000"
+          android:visibility="gone"
+          android:layout_margin="5dp"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+      <EditText
+        android:id="@+id/et_condep_feild_desc_larga4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textMultiLine"
+       	android:gravity="top"
+        android:lines="3"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="3dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_edittext"
+        android:ems="10" />
+    
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
